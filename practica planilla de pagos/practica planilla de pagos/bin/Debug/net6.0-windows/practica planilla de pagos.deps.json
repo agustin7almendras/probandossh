@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "practica planilla de pagos/1.0.0": {
+        "runtime": {
+          "practica planilla de pagos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "practica planilla de pagos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

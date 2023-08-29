@@ -1,0 +1,260 @@
+-----CLASE PLANILLA------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Pjcaso72
+{
+    class Planilla
+    {
+        //atributos
+       public string empleado { get; set; }
+       public string cargo { get; set; }
+       public DateTime fechaIngreso { get; set; }
+       public int años { get; set; }
+
+        private string cod;
+
+        public string Cod
+        {
+            get { return cod; }
+            set { cod = value; }
+        }
+
+
+        public Planilla(string empleado,string cargo,DateTime fechaIngreso,int años, string cod)
+        {
+            this.empleado = empleado;
+            this.cargo = cargo;
+            this.fechaIngreso = fechaIngreso;
+            this.años = añosServicio();
+            this.cod = cod;
+        }
+        //metodos
+
+        public int añosServicio()     //Metodo que calcula años de antiguedad
+        {
+            return DateTime.Now.Year - fechaIngreso.Year;
+        }
+
+        public string mesConsultado() //metodo que obtiene el mes actual
+        {
+            int mes = DateTime.Now.Month;
+            switch (mes)
+            {
+                case 1: return "ENERO";
+                case 2: return "FEBRERO";
+                case 3: return "MARZO";
+                case 4: return "ABRIL";
+                case 5: return "MAYO";
+                case 6: return "JUNIO";
+                case 7: return "JULIO";
+                case 8: return "AGOSTO";
+                case 9: return "SEPTIEMBRE";
+                case 10: return "OCTUBRE";
+                case 11: return "NOVIEMBRE";
+                case 12: return "DICIEMBRE";
+            }
+            return "";
+        }
+        public double determinaBasico() //determina sueldo basico
+        {
+            switch(cargo)
+            {
+                case "Coordinador": return 2000;
+                case "Jefe": return 4000;
+                case "Capacitador": return 2500;
+                case "Asistente": return 1200;
+            }
+            return 0;
+        }
+        //determina el monto de la gratificacion
+        public double determinaGratificacion()
+        {
+            if (mesConsultado() == "ABRIL")
+                return 400;
+            else if (mesConsultado() == "JULIO")
+                    return 450;
+            else if (mesConsultado() == "DICIEMBRE")
+                return determinaBasico()*2;
+            return 0;
+        }
+        //Determina la comision
+        public double determinaComision()
+        {
+            if (cargo == "Asistente")
+                return 100;
+            else if (cargo == "Coordinador")
+                return 200;
+            return 0;
+        }
+        //determina el descuento AFP
+        public double determinaAfp()
+        {
+            return determinaBasico() * 0.12;
+        }
+        //determina descuento por cooperativa
+        public double determinaDescuentoCooperativa()
+        {
+            if (cargo == "Jefe")
+                return determinaBasico() * 0.05;
+            else if (cargo == "Capacitador")
+                return determinaBasico() * 0.02;
+            return 0;
+        }
+        //determina aportaciones por seguro social
+        public double determinaAporteSeguro()
+        {
+            return determinaBasico() * 0.05;
+        }
+
+        //calculando los totales
+        public double calculoTotalIngreso()
+        {
+            return determinaBasico() + determinaGratificacion() + determinaComision();
+        }
+
+        public double calculoTotalDescuentos()
+        {
+            return determinaAfp() + determinaDescuentoCooperativa();
+        }
+        public double calculoTotalAportaciones()
+        {
+            return determinaAporteSeguro();
+        }
+        //determina el total neto
+        public double determinaNeto()
+        {
+            return calculoTotalIngreso() - calculoTotalDescuentos() - calculoTotalAportaciones();
+        }
+
+    }
+}
+-----------FrmPlanilla-------------------------
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Pjcaso72
+{
+    public partial class FrmPlanilla : Form
+    {
+        Planilla objP;
+        List<Planilla> empleados = new List<Planilla>();
+        public FrmPlanilla()
+        {
+            InitializeComponent();
+        }
+
+        private void btnprocesar_Click(object sender, EventArgs e)
+        {
+            string empleado = txtempleado.Text;
+            string cargo = cbocargo.Text;
+            DateTime fechaingreso = dtfechaingreso.Value;
+            int años = int.Parse(lblañosservicio.Text);
+            //PARA LA CAPTURA DEL CODIGO DE CADA EMPLEADO
+            string apell2 = tboxap2.Text;
+            char nom = empleado[0];
+            char ap2 = apell2[0];
+            string codigo = nom + tbxap1.Text + ap2;
+
+            objP = new Planilla(empleado,cargo,fechaingreso,años,codigo);
+
+            empleados.Add(objP);
+           
+           // dgplanilla.DataSource = null;
+            //dgplanilla.DataSource = empleado;
+            //impresion de valores
+            txtmesactual.Text = objP.mesConsultado();
+            lblbasico.Text = objP.determinaBasico().ToString();
+            lblgratificacion.Text = objP.determinaGratificacion().ToString();
+            lblcomision.Text = objP.determinaComision().ToString();
+            lblafp.Text = objP.determinaAfp().ToString();
+            lblcooperativa.Text = objP.determinaDescuentoCooperativa().ToString();
+            lblsegurosicial.Text = objP.determinaAporteSeguro().ToString();
+
+            lbltotalingresos.Text = objP.calculoTotalIngreso().ToString();
+            lbltotaldescuentos.Text = objP.calculoTotalDescuentos().ToString();
+            lbltotalaportaciones.Text = objP.calculoTotalAportaciones().ToString();
+
+            lbltotal.Text = objP.determinaNeto().ToString();
+
+            
+            //MessageBox.Show(codigo);
+
+            
+
+        }
+
+        //IMPLEMENTACION DE METODOS
+        void mostrarfecha()
+        {
+            lblfechaActual.Text = DateTime.Now.ToShortDateString();
+        }
+
+        void mostrarmesActual()
+        {
+            txtmesactual.Text = DateTime.Now.Month.ToString();
+        }
+
+        private void dtfechaingreso_ValueChanged(object sender, EventArgs e)
+        {
+            lblañosservicio.Text = (DateTime.Now.Year - dtfechaingreso.Value.Year).ToString();
+
+        }
+
+        private void FrmPlanilla_Load(object sender, EventArgs e)
+        {
+            mostrarfecha();
+            mostrarmesActual();
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            //buscamos el codigo del empleado en la lista
+            string buscaCod = tbxcodigo.Text;
+
+            for (int i = 0; i < empleados.Count; i++)
+            {
+                Planilla aux = empleados[0];
+                if (aux.Cod == buscaCod)
+                {
+                    dgplanilla.Rows.Add(buscaCod, objP.cargo, objP.añosServicio(), objP.determinaNeto());
+                    
+                }
+            }
+
+        }
+    }
+}
+----------Program.cs----------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Pjcaso72
+{
+    static class Program
+    {
+        /// <summary>
+        /// Punto de entrada principal para la aplicación.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FrmPlanilla());
+        }
+    }
+}

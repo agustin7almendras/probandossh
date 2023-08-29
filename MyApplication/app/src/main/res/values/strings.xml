@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="txt_valor1">Primer valor</string>
+    <string name="txt_valor2">Segundo valor</string>
+    <string name="button">calcular</string>
+    <string name="etMultiline_resultado">calcular</string>
+    >
+</resources>

@@ -1,0 +1,383 @@
+DIAGRAMAS DE CASOS DE USO EN LINEA
+https://online.visual-paradigm.com/w/fqbolcsy/diagrams/#diagram:proj=0&type=UseCaseDiagram&width=11&height=8.5&unit=inch
+
+
+https://mecabot-ula.org/tutoriales/arduino/pratica-2-encender-y-apagar-un-led-utilizando-un-boton-pulsador/
+https://fontawesome.com/search?q=edit&o=r  FONTAWESOME ICONOS PARA BOTONES 
+
+MI TOKEN :::    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
+
+
+
+
+
+Capítulo 2 
+MARCO TEORICO CONCEPTUAL
+Es fundamentar, diversos conocimientos sobre el tema relacionado, recabar información de libros, reportes, memorias, así como artículos y tesis 
+2.1. SUBTITUL1
+ 
+PROYECTO SIMILAR A UN SISTEMA DE BOTON DE PANICO GUAYAQUIL 
+
+ http://repositorio.ug.edu.ec/bitstream/redug/64375/1/B-CINT-PTG-N.906%20%20Sat%C3%A1n%20Pacay%20Shirley%20%20Lisbet%20%20%20%20%20.%20%20%20%20Quinde%20Cirino%20%20Jonathan%20%20Jos%C3%A9.pdf
+
+
+SISTEMA SIMILAR QUE APLICARON EN LA LA PAZ 
+https://eldeber.com.bo/bolivia/asi-es-el-radiotaxi-que-tiene-camaras-y-botones-de-panico-que-circula-en-la-paz_150660
+ANDROID ESTUDIO 2021 DE Jaime Miralles Zaragoza
+
+https://lcsi.umh.es/docs/pfcs/PFC_TFG_Miralles_Jaime.pdf
+
+
+JAVA CARLOS DIAS
+https://books.google.es/books?hl=es&lr=lang_es&id=otysDwAAQBAJ&oi=fnd&pg=PA1&dq=lenguaje+java+historia&ots=Jvet_FPEto&sig=2e2c7mis5FDQA_m-PS80h4S9bGQ#v=onepage&q=lenguaje%20java%20historia&f=false
+
+26/08/23
+DEFINICION ORIENTADO A OBJETOS POO 
+Programación orientada a objetos (POO) en php
+https://www.adaweb.es/programacion-orientada-objetos-poo-php/
+https://www.youtube.com/watch?v=VGJjCub9vtM
+
+MODELO VISTA CONTROLADOR Modelo vista controlador (MVC) en PHP
+https://www.adaweb.es/modelo-vista-controlador-mvc-php/
+
+
+
+    +-----------------------+
+    |     Cronómetro        |
+    +-----------------------+
+    |                       |
+    |   - Mostrar Tiempo    |
+    |   - Iniciar           |
+    |   - Pausar            |
+    |   - Reiniciar         |
+    |   - Grabar Tiempo     |
+    |                       |
+    +-----------------------+
+         |               |
+         |               |
+         V               V
++--------------------+    +------------------+
+|    Iniciar         |    |    Mostrar       |
+|    Caso de Uso     |    |    Caso de Uso   |
++--------------------+    +------------------+
+|                    |    |                  |
+|  - Iniciar         |    |  - Mostrar       |
+|                    |    |                  |
++--------------------+    +------------------+
+         |
+         |
+         V
++---------------------+
+|     Pausar          |
+|   Caso de Uso       |
++---------------------+
+|                     |
+|  - Pausar           |
+|                     |
++---------------------+
+         |
+         |
+         V
++---------------------+
+|     Reiniciar       |
+|   Caso de Uso       |
++---------------------+
+|                     |
+|  - Reiniciar        |
+|                     |
++---------------------+
+         |
+         |
+         V
++---------------------+
+|   Grabar Tiempo     |
+|   Caso de Uso       |
++---------------------+
+|                     |
+|  - Grabar Tiempo    |
+|                     |
++---------------------+
+
++------------------+       +-------------------+
+|   Usuario        |       |   Cronómetro      |
++------------------+       +-------------------+
+|                  |       |                   |
+| Inicia cronómetro|-----> | Mostrar Tiempo    |
+|                  |       |                   |
+|                  |       |                   |
+|                  |       |                   |
+| Pausa cronómetro |-----> | Pausar            |
+|                  |       |                   |
+|                  |       |                   |
+| Reinicia cronómetro|----> | Reiniciar         |
+|                  |       |                   |
+|                  |       |                   |
+| Grabar tiempo    |-----> | Grabar Tiempo     |
+|                  |       |                   |
++------------------+       +-------------------+
+using System;
+using System.Diagnostics;
+using System.Threading;
+
+class Cronometro
+{
+    private Stopwatch stopwatch = new Stopwatch();
+
+    public void Iniciar()
+    {
+        if (!stopwatch.IsRunning)
+        {
+            stopwatch.Start();
+        }
+    }
+
+    public void Pausar()
+    {
+        if (stopwatch.IsRunning)
+        {
+            stopwatch.Stop();
+        }
+    }
+
+    public void Reiniciar()
+    {
+        stopwatch.Reset();
+    }
+
+    public TimeSpan MostrarTiempo()
+    {
+        return stopwatch.Elapsed;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Cronometro cronometro = new Cronometro();
+
+        cronometro.Iniciar();
+        Thread.Sleep(2500);
+        cronometro.Pausar();
+        Console.WriteLine("Tiempo transcurrido: " + cronometro.MostrarTiempo());
+
+        cronometro.Reiniciar();
+        Console.WriteLine("Cronómetro reiniciado");
+
+        cronometro.Iniciar();
+        Thread.Sleep(3000);
+        cronometro.Pausar();
+        Console.WriteLine("Tiempo transcurrido: " + cronometro.MostrarTiempo());
+    }
+}
+
+
+crear una funcion que reciba el ID de un producto retorne en una cadena el ID, descripcion, total unidades vendidas y saldo.
+En caso de no Existir el 
+ACTIVADOR 
+
+https://www.youtube.com/watch?v=kL9PEBlNL_U&t=3s
+
+http://www.vc.ehu.es/jiwotvim/ISOFT2008-2009/Teoria/BloqueIII/Ejercicios-DCU.pdf EJERCIOS DE CASOS DE USOS 
+https://www.studocu.com/es/document/universidad-pontificia-de-salamanca/programacion/ejercicios-diagramas-de-secuencias/21858268 EJERCICIOS DE DIAGRAMA DE SECUENCIAS
+
+https://www.youtube.com/watch?v=amDMZ5tSysY No pierdas el tiempo ciamdo Aprendes a progra,mar
+
+CONECTAR A SSH 
+ENGANCHAR A UN RESPOSITORIO 
+ENGANCHAR REPOSITORIO LOCAL Y DE GIPHUP 
+EL 24 EL 29 EXAMEN DE GIP   5 Y 7 REVISION DE TRELLO
+VERSIONANDO TODO 
+COMO ENGANCHAR A UN REPOSITORIO 
+
+
+23/08/23 REDES 29 EVALUCION TEORICA (CONEXION A INTERNET UNIDAD 5)  15 DE SEPTIEMBRE TERMINA EL BIMISTRE
+  15 DE SEPTIEMBRE EXAMEN DE  TEORICA (FIREWALLS Y SERVIDORES) 15+5 PUNTOS 
+PRACTICA 1  
+
+WEB 25/08/20
+Apis 
+
+eL VALOR DE LOS aPIS 
+los apis son lo sieguiente 
+HTTPS RANDOMMUSER.ME 
+formato 
+pkeapi.co 
+covitrackking.com 
+thispersondoesnotexis.com  
+fakestoryapi
+unsp
+zenquotes 
+tambien existen otras apis mucho mas macivos 
+ejemplo los apis de facebook 
+tambie se pude usar apis de cloud 
+fonts.google.com 
+buscando seleccionamos pra utilarlo cada fuente
+
+27/08/23 MODIFICANDO CODIGO 
+borrado base.php
+
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed'); // ESTO ES UNA LINEA DE SERGURIDAD, NO 
+
+
+class Base extends CI_Controller { //ESTO ES HERERNCIA, ACCEDEMOS A NUESTRO CONTROLADOR Welcome.php
+
+	
+	public function index()
+	{
+		$this->load->view('inc/cabecera');
+		$this->load->view('inc/menu');
+		$this->load->view('inicio');
+		$this->load->view('inc/pie'); 
+	}
+
+   
+    public function prod() 
+	{
+		
+		$lista=$this->estudiante_model->listaestudiantes();
+		$data['estudiantes']=$lista;
+
+		$this->load->view('inc/cabecera');
+		$this->load->view('inc/menu');
+		$this->load->view('productos', $data);
+		$this->load->view('inc/pie');
+	}
+
+    public function cont()
+	{
+		$this->load->view('inc/cabecera');
+		$this->load->view('inc/menu');
+		$this->load->view('contactos');
+		$this->load->view('inc/pie');
+	}
+
+	public function pruebabd()
+	{
+		$query=$this->db->get('estudiantes');
+		$execonsulta=$query->result();
+		print_r($execonsulta);
+	}
+
+}
+
+
+reducido el ARCHIVO estudiante_model.php
+ class Estudiante_model extends CI_Model
+    {
+        public function listaestudiantes()
+        {
+            $this->db->select('*');
+            $this->db->from('estudiantes');
+            $this->db->where('habilitado','1');
+            return $this->db->get();
+        }
+
+        
+        public function listaestudianteslte()
+        {
+            $this->db->select('*');
+            $this->db->from('estudiantes');
+            $this->db->where('habilitado','1');
+            return $this->db->get();
+        }
+
+        public function listaestudiantesdes()
+        {
+            $this->db->select('*');
+            $this->db->from('estudiantes');
+            $this->db->where('habilitado','0');
+            return $this->db->get();
+        }
+
+        public function listaestudiantesdeslte()
+        {
+            $this->db->select('*');
+            $this->db->from('estudiantes');
+            $this->db->where('habilitado','0');
+            return $this->db->get();
+        }
+
+        public function agregarestudiante($data)
+        {
+            //insercion mvc
+            $this->db->insert('estudiantes',$data);
+
+        }
+
+        public function agregarestudiantelte($data)
+        {
+            //insercion mvc
+            $this->db->insert('estudiantes',$data);
+
+        }
+
+        public function eliminarestudiante($idestudiante)
+        {
+            //borrado mvc hard delete
+            $this->db->where('idEstudiante',$idestudiante);
+            $this->db->delete('estudiantes');
+        }
+
+        public function eliminarestudiantelte($idestudiante)
+        {
+            //borrado mvc hard delete
+            $this->db->where('idEstudiante',$idestudiante);
+            $this->db->delete('estudiantes');
+        }
+
+        public function recuperarestudiante($idestudiante)
+        {
+            $this->db->select('*');
+            $this->db->from('estudiantes');
+            $this->db->where('idEstudiante',$idestudiante);
+            return $this->db->get();
+        }
+
+        public function recuperarestudiantelte($idestudiante)
+        {
+            $this->db->select('*');
+            $this->db->from('estudiantes');
+            $this->db->where('idEstudiante',$idestudiante);
+            return $this->db->get();
+        }
+
+        public function modificarestudiante($idestudiante,$data)
+        {
+            $this->db->where('idEstudiante',$idestudiante);
+            $this->db->update('estudiantes',$data);
+        }
+
+        public function modificarestudiantelte($idestudiante,$data)
+        {
+            $this->db->where('idEstudiante',$idestudiante);
+            $this->db->update('estudiantes',$data);
+        }
+
+    }
+
+
+CAMBIOS 28/08/23
+
+ELIMINADOS TODOS LOOS CRUDS DE estudiante.php solo queda crud de lte
+
+
+WEB 28/08/23 
+
+nos Registramos como desarrolladores en developers.google.com
+
+cuenta de facturacion se carga un credito antes no teniamos que habilitar una cu4enta de facturacion 
+si no te registras te marca encima una marca de agua 
+
+TRABAJMOS CON UNA LIBRERIA PARA DESACTIVAR  QUE ES ; "leaflet " es necesario que se registren y les va crear un appkey 
+MAP TILIR incrustar la llve exactamente en le LAYER 
+
+de ese forma incrustamos mapas o mapas y apis 
+A CONTINUACION TRAZAMOS POLIGUNOS Y FORMAS 
+
+CREAR DATASET 
+MARCAR RUTAS 
+
+// AGRAGAR ESCALAS 
+// RECOMENDACION EL CODIGO DE APKEY NO COMPARTAN CON ADIE 

@@ -1,0 +1,17 @@
+DELIMITER $$
+CREATE FUNCTION ufcEjercicioUno (_id INT)
+RETURNS VARCHAR(250) DETERMINISTIC
+BEGIN
+	DECLARE _res VARCHAR(250) DEFAULT 'Producto inexistente'; #Siempre comillas simples, no comillas dobles#
+    DECLARE _C INT; #C = Total unidades Vendidas, detalle por el GROUP BY, para que no falle#
+	IF EXISTS(SELECT id FROM producto WHERE id = _id) THEN
+		SELECT CONCAT(P.id,' ', P.descripcion, ' ', P.saldo), IFNULL(SUM(D.cantidad), 0) INTO _res, _c
+        FROM producto P 
+        LEFT JOIN detalle D ON D.idProducto = P.id
+		WHERE P.id = _id
+        GROUP BY CONCAT(P.id, ' ', P.descripcion, ' ', P.saldo);
+        
+        SET _res = CONCAT(_res, ' ', _c);
+	END IF;
+    RETURN _res;
+END $$

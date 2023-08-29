@@ -1,0 +1,17 @@
+DELIMITER $$
+CREATE PROCEDURE uspEjercicioDos (_ini INT, _fin INT)
+BEGIN
+	DECLARE _res VARCHAR(200); #Si dan un rango fuera de lo indicado se puede hacer ifs#
+    
+    WHILE _ini <= _fin DO
+		
+			SET _res = ufcEjercicioUno(_ini);
+            IF _res <> 'Producto Inexistente' THEN #<> = indiferente#
+				INSERT INTO ProductoHistory(resume)
+                VALUES (_res); #Va a girar y girar e insertar siempre y cuando las Ids son válidas#
+			END IF;
+            SET _ini = _ini+1;		
+		END WHILE;
+END$$
+    
+    #CALL uspEjercicioDos(3 , 5);

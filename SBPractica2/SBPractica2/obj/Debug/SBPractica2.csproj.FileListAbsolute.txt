@@ -1,0 +1,15 @@
+c:\users\ivan\documents\visual studio 2013\Projects\SBPractica2\SBPractica2\bin\Debug\SBPractica2.exe.config
+c:\users\ivan\documents\visual studio 2013\Projects\SBPractica2\SBPractica2\bin\Debug\SBPractica2.exe
+c:\users\ivan\documents\visual studio 2013\Projects\SBPractica2\SBPractica2\bin\Debug\SBPractica2.pdb
+c:\users\ivan\documents\visual studio 2013\Projects\SBPractica2\SBPractica2\obj\Debug\SBPractica2.exe
+c:\users\ivan\documents\visual studio 2013\Projects\SBPractica2\SBPractica2\obj\Debug\SBPractica2.pdb
+C:\Users\IVAN\Desktop\SBPractica2\SBPractica2\bin\Debug\SBPractica2.exe.config
+C:\Users\IVAN\Desktop\SBPractica2\SBPractica2\obj\Debug\SBPractica2.exe
+C:\Users\IVAN\Desktop\SBPractica2\SBPractica2\obj\Debug\SBPractica2.pdb
+C:\Users\Augus\Desktop\SBPractica2\SBPractica2\bin\Debug\SBPractica2.exe.config
+C:\Users\Augus\Desktop\SBPractica2\SBPractica2\bin\Debug\SBPractica2.exe
+C:\Users\Augus\Desktop\SBPractica2\SBPractica2\bin\Debug\SBPractica2.pdb
+C:\Users\Augus\Desktop\SBPractica2\SBPractica2\obj\Debug\SBPractica2.csproj.AssemblyReference.cache
+C:\Users\Augus\Desktop\SBPractica2\SBPractica2\obj\Debug\SBPractica2.csproj.CoreCompileInputs.cache
+C:\Users\Augus\Desktop\SBPractica2\SBPractica2\obj\Debug\SBPractica2.exe
+C:\Users\Augus\Desktop\SBPractica2\SBPractica2\obj\Debug\SBPractica2.pdb

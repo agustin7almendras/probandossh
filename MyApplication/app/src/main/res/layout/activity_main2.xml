@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/btnbanners"
+        android:layout_width="134dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="104dp"
+        android:text="banners"
+        app:iconTint="#C30E0E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnbastidores"
+        android:layout_width="133dp"
+        android:layout_height="94dp"
+        android:text="bastidores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/btnadesivos"
+        android:layout_width="133dp"
+        android:layout_height="103dp"
+        android:text="adesivos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <Button
+        android:id="@+id/btnseñaleticas"
+        android:layout_width="146dp"
+        android:layout_height="109dp"
+        android:layout_marginEnd="48dp"
+        android:text="señaleticas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnadesivos"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <Button
+        android:id="@+id/btnimprenta"
+        android:layout_width="135dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="36dp"
+        android:text="imprenta"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <Button
+        android:id="@+id/btnproforma"
+        android:layout_width="134dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="124dp"
+        android:text="proforma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btncajaluminosa"
+        android:layout_width="148dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="44dp"
+        android:text="caja luminosa"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="515dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU PRINCIPAL"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/btnetiquetascorp"
+        android:layout_width="159dp"
+        android:layout_height="73dp"
+        android:text="Etiquetas corp."
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salir"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="645dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

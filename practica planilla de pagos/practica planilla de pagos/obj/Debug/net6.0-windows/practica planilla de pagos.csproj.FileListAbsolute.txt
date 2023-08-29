@@ -1,0 +1,34 @@
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.exe
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.deps.json
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.runtimeconfig.json
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.dll
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.pdb
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.csproj.AssemblyReference.cache
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica_planilla_de_pagos.Form1.resources
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.csproj.GenerateResource.cache
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.AssemblyInfoInputs.cache
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.AssemblyInfo.cs
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.csproj.CoreCompileInputs.cache
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.dll
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\refint\practica planilla de pagos.dll
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.pdb
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.genruntimeconfig.cache
+C:\Users\Donny Ortega\source\repos\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\ref\practica planilla de pagos.dll
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.exe
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.deps.json
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.runtimeconfig.json
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.dll
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\bin\Debug\net6.0-windows\practica planilla de pagos.pdb
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.csproj.AssemblyReference.cache
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica_planilla_de_pagos.Form1.resources
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.csproj.GenerateResource.cache
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.AssemblyInfoInputs.cache
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.AssemblyInfo.cs
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.csproj.CoreCompileInputs.cache
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.dll
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\refint\practica planilla de pagos.dll
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.pdb
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\practica planilla de pagos.genruntimeconfig.cache
+C:\Users\Donny Ortega\Documents\Visual Studio 2022\practica planilla de pagos\practica planilla de pagos\obj\Debug\net6.0-windows\ref\practica planilla de pagos.dll

@@ -1,0 +1,153 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace SBPractica2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Stack EstaPila = new Stack();
+            Queue EstaCola = new Queue();
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("1. Pila");
+                Console.WriteLine("2. Cola");
+                Console.WriteLine("3. Salir");
+                Console.WriteLine("Seleccione una alternativa");
+                int alt1 = int.Parse(Console.ReadLine());
+                if (alt1 == 1)
+                {
+                    while (true)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("///ESTRUCTURA PILA ///");
+                        Console.WriteLine("1. Insertar elemento en la pila");
+                        Console.WriteLine("2. Sacar elemento de la pila");
+                        Console.WriteLine("3. Verificar elemento en la cima de la pila");
+                        Console.WriteLine("4. Listar elementos de la pila");
+                        Console.WriteLine("5. Salir");
+                        Console.WriteLine("Seleccione su alternativa");
+                        int alt2 = int.Parse(Console.ReadLine());
+                        if (alt2 == 1)
+                        {
+                            Console.WriteLine("1. Insertar elemento en la pila");
+                            string palabra = Console.ReadLine();
+                            EstaPila.Push(palabra);
+                        }
+                        else
+                            if (alt2 == 2)
+                                if (EstaPila.Count == 0)
+                                {
+                                    Console.WriteLine("Pila vacia..");
+                                }
+                                else
+                                {
+                                    EstaPila.Pop();
+                                    Console.WriteLine("Elemento retirado");
+                                }
+                            else
+                                if (alt2 == 3)
+                                {
+                                    Console.WriteLine("El elemento de la cima de la pila es: " + EstaPila.Peek());
+                                }
+                                else
+                                    if (alt2 == 4)
+                                    {
+                                        foreach (string x in EstaPila)
+                                        {
+                                            Console.WriteLine(x);
+                                        }
+                                        //Console.WriteLine("5. Listar elementos de la pila");
+                                    }
+                                    else
+                                        if (alt2 == 5)
+                                        {
+                                            break;
+                                        }
+                                        else
+                                            if (alt2 >= 6)
+                                            {
+                                                Console.WriteLine("Seleccione una alternativa valida");
+                                            }
+                        Console.ReadKey();
+
+                    }
+                }
+                else
+                    if (alt1 == 2)
+                    {
+                        while (true)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("____ESTRUCTURA COLA ____");
+                            Console.WriteLine("1. Insertar elemento en la cola");
+                            Console.WriteLine("2. Sacar elemento de la cola");
+                            Console.WriteLine("3. Verificar elemento de cima de la cola");
+                            Console.WriteLine("4. Listar elementos de la cola");
+                            Console.WriteLine("5. Salir");
+                            Console.WriteLine("Seleccione su alternativa");
+                            int alt2 = int.Parse(Console.ReadLine());
+                            if (alt2 == 1)
+                            {
+                                Console.WriteLine("Insertar elemento en la cola");
+                                string palabra = Console.ReadLine();
+                                EstaCola.Enqueue(palabra);
+                            }
+                            else
+                                if (alt2 == 2)
+                                {
+                                    Console.WriteLine("Sacar elemento de la cola");
+                                    EstaCola.Clear();
+                                    Console.WriteLine("Elemento retirado");
+                                }
+                                else
+                                    if (alt2 == 3)
+                                    {
+
+                                        Console.WriteLine("El elemento de la cima de la cola es: " + EstaPila.Peek());
+                                    }
+                                    else
+                                        if (alt2 == 4)
+                                        {
+                                            foreach (string x in EstaCola)
+                                            {
+                                                Console.WriteLine(x);
+                                            }
+                                        }
+                                        else
+                                            if (alt2 == 5)
+                                            {
+                                                break;
+                                            }
+                                            else
+                                                if (alt2 >= 6)
+                                                {
+                                                    Console.WriteLine("Elija una alternativa valida");
+                                                }
+                            Console.ReadKey();
+                        }
+
+                    }
+                    else
+                        if (alt1 == 3)
+                        {
+                            break;
+                        }
+                        else
+                            if (alt1 >= 4)
+                            {
+                                Console.WriteLine("Elija una alternativa valida...");
+                            }
+                Console.ReadKey();
+            }
+            Console.WriteLine("Gracias hasta luego...");
+            Console.ReadKey();
+        }
+    }
+}
